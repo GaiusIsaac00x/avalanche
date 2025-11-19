@@ -50,6 +50,11 @@ footer {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+   .glass-panel{
+    padding: 1rem;
+   }   
+}
 
 .hero-effects .star {
   position: absolute;
@@ -278,7 +283,7 @@ a.link-light {
 
 @media (max-width: 576px) {
   .display-4 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
 
   .stat-value {
@@ -286,3 +291,22 @@ a.link-light {
   }
 }
 
+.send-dm-btn {
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.send-dm-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.send-dm-btn svg {
+  transition: transform 0.3s;
+}
+
+.send-dm-btn:hover svg {
+  transform: rotate(-20deg);
+}

@@ -22,15 +22,17 @@
       <span class="star"></span>
       <span class="star"></span>
     </div>
-    <div class="row align-items-center glass-panel">
+    <div class="row align-items-center glass-panel futuristic-modules">
       <div class="col-lg-7">
-        <p class="eyebrow text-uppercase mb-2">Avalanche Training</p>
+        <p class="eyebrow text-uppercase mb-2 text-white"><b>Avalanche Training</b></p>
         <h1 class="display-4 fw-bold mb-3">
           3-Month Frontend Mentorship with Real Humans, Real Follow-Up
         </h1>
         <p class="lead mb-4">
-          Skip automated dashboards. Get black-and-white clarity, real-time accountability,
-          and senior-level mentorship across HTML, CSS, JavaScript, and React with hands-on builds.
+          <b>
+            Skip automated dashboards. Get black-and-white clarity, real-time accountability,
+            and senior-level mentorship across HTML, CSS, JavaScript, and React with hands-on builds.
+          </b>
         </p>
         <div class="d-flex flex-wrap gap-3">
           <a href="#pricing" class="btn btn-light btn-lg px-4">Claim Early Bird Slot</a>
@@ -110,31 +112,103 @@
   </section>
 
   <main>
-    <section class="container py-5 border-top border-secondary-subtle">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="module-card p-4">
-            <p class="label">Phase 01</p>
-            <h3>HTML &amp; CSS Systems</h3>
-            <p>Architect semantic layouts, responsive grids, and futuristic UI compositions.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="module-card p-4">
-            <p class="label">Phase 02</p>
-            <h3>JavaScript Fluency</h3>
-            <p>Build interactive components, data flows, and zero-lag dashboards without libraries.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="module-card p-4">
-            <p class="label">Phase 03</p>
-            <h3>React Execution</h3>
-            <p>Ship production-grade interfaces, stateful patterns, and performance-first builds.</p>
-          </div>
-        </div>
+   <section class="container py-5 border-top border-secondary-subtle futuristic-modules mt-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="module-card p-4">
+        <p class="label">Phase 01</p>
+        <h3>HTML &amp; CSS Systems</h3>
+        <p>Architect semantic layouts, responsive grids, and futuristic UI compositions.</p>
       </div>
-    </section>
+    </div>
+    <div class="col-md-4">
+      <div class="module-card p-4">
+        <p class="label">Phase 02</p>
+        <h3>JavaScript Fluency</h3>
+        <p>Build interactive components, data flows, and zero-lag dashboards without libraries.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="module-card p-4">
+        <p class="label">Phase 03</p>
+        <h3>React Execution</h3>
+        <p>Ship production-grade interfaces, stateful patterns, and performance-first builds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Futuristic background for the section */
+.futuristic-modules {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #e0e0ff;
+  border-top: none;
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle animated shiny overlay */
+.futuristic-modules::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.2), transparent 40%);
+  animation: shine 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% { transform: rotate(0deg) translateX(0); }
+  100% { transform: rotate(360deg) translateX(0); }
+}
+
+/* Module cards */
+.module-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 40px rgba(255, 0, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing hover effect */
+.module-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 30px #00fff0, 0 0 50px #ff00ff, 0 0 70px #00ffff55;
+}
+
+/* Label styling */
+.module-card .label {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00fff0;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+/* Card titles */
+.module-card h3 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Card descriptions */
+.module-card p {
+  color: #cfcfff;
+  line-height: 1.6;
+}
+</style>
+
 
     <section class="container py-5">
       <div class="row align-items-center">
@@ -150,19 +224,19 @@
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
           <div class="stat-grid">
-            <div>
+            <div class="text-center">
               <span class="stat-value">3</span>
               <p class="text-white">Months of focused frontend labs</p>
             </div>
-            <div>
+            <div class="text-center">
               <span class="stat-value">20</span>
               <p class="text-white">Early bird slots (only first 20 unlock ₦60k)</p>
             </div>
-            <div>
-              <span class="stat-value">10</span>
+            <div class="text-center">
+              <span class="stat-value">20</span>
               <p class="text-white">Learners admitted this cohort</p>
             </div>
-            <div>
+            <div class="text-center">
               <span class="stat-value">2</span>
               <p class="text-white">Backend modules (Python + SQL) after core track</p>
             </div>
@@ -183,14 +257,28 @@
               hands-on &mdash; running accountability calls, code reviews, and career sessions so every learner
               levels up with confidence.
             </p>
-            <a
-              class="btn btn-dark px-4"
-              href="https://isaac-gaius.netlify.app/"
-              target="_blank"
-              rel="noopener"
-            >
-              Dive into Isaac’s Work
-            </a>
+            <div class="d-flex gap-2">
+              <a
+                class="btn btn-dark px-4"
+                href="https://isaac-gaius.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                Dive into Isaac's Work
+              </a>
+
+              <!-- WhatsApp-style animated DM button -->
+              <a
+                href="https://wa.me/2349032683755"
+                target="_blank"
+                class="btn btn-success px-4 d-flex align-items-center send-dm-btn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots me-2" viewBox="0 0 16 16">
+                  <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 0 .707-.293l3.414-3.414a1 1 0 0 0 .293-.707V4a2 2 0 0 0-2-2H2zm3 5.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm2 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm2 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg>
+                Send A DM
+              </a>
+            </div>
           </div>
           <div class="col-lg-7">
             <div class="bio-panel p-4 p-lg-5">
@@ -207,6 +295,7 @@
       </div>
     </section>
 
+
     <section id="pricing" class="container py-5">
       <div class="row align-items-center g-4">
         <div class="col-lg-6">
@@ -215,7 +304,7 @@
               Early Bird &mdash; First 20 members
             </p>
             <h2 class="display-5 fw-bold mb-3">
-              ₦100,000 <span class="slash text-white">₦60,000</span>
+              ₦60, 000 <span class="slash text-white">₦100,000</span>
             </h2>
             <p class="text-white mb-4">3-month immersive frontend experience + backend option.</p>
             <ul class="list-unstyled lh-lg">
@@ -224,7 +313,7 @@
               <li>✔ Lifetime alumni support loop</li>
               <li>✔ Python + SQL add-on (post-frontend)</li>
             </ul>
-            <a href="#" class="btn btn-light btn-lg w-100 mt-4">Secure Invoice</a>
+            <!-- <a href="#" class="btn btn-light btn-lg w-100 mt-4">Secure Invoice</a> -->
           </div>
         </div>
         <div class="col-lg-6">
