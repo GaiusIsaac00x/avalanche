@@ -16,66 +16,96 @@
 </head>
 <body>
   <div class="noise-overlay"></div>
+  
+  <!-- Futuristic Particle System -->
+  <div class="cyber-grid"></div>
+  <div class="floating-particles">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
+    <div class="particle particle-6"></div>
+    <div class="particle particle-7"></div>
+    <div class="particle particle-8"></div>
+  </div>
+  
+  <!-- Holographic Orbs -->
+  <div class="holo-orbs">
+    <div class="holo-orb orb-1">
+      <div class="orb-ring"></div>
+      <div class="orb-ring ring-2"></div>
+      <div class="orb-core"></div>
+    </div>
+    <div class="holo-orb orb-2">
+      <div class="orb-ring"></div>
+      <div class="orb-ring ring-2"></div>
+      <div class="orb-core"></div>
+    </div>
+    <div class="holo-orb orb-3">
+      <div class="orb-ring"></div>
+      <div class="orb-ring ring-2"></div>
+      <div class="orb-core"></div>
+    </div>
+  </div>
+  
+  <!-- Geometric Shapes -->
+  <div class="geo-shapes">
+    <div class="geo-shape shape-1">
+      <svg viewBox="0 0 100 100" class="rotating-poly">
+        <polygon points="50,5 95,25 95,75 50,95 5,75 5,25" fill="none" stroke="url(#gradient1)" stroke-width="1"/>
+        <defs>
+          <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8" />
+            <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.3" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="geo-shape shape-2">
+      <svg viewBox="0 0 100 100" class="rotating-poly reverse">
+        <polygon points="50,10 90,90 10,90" fill="none" stroke="url(#gradient2)" stroke-width="1"/>
+        <defs>
+          <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.6" />
+            <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:0.3" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="geo-shape shape-3">
+      <svg viewBox="0 0 100 100" class="rotating-poly">
+        <rect x="15" y="15" width="70" height="70" fill="none" stroke="url(#gradient3)" stroke-width="1" transform="rotate(45 50 50)"/>
+        <defs>
+          <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.7" />
+            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.3" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Glowing Lines -->
+  <div class="energy-lines">
+    <div class="energy-line line-1"></div>
+    <div class="energy-line line-2"></div>
+    <div class="energy-line line-3"></div>
+  </div>
+  
    <header class="hero-section container py-5">
     <div class="hero-effects">
       <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
-      
-      <!-- Christmas Jellies -->
-      <div class="christmas-jelly jelly-1">
-        <div class="jelly-cap"></div>
-        <div class="jelly-body">
-          <div class="jelly-shine"></div>
-        </div>
-        <div class="jelly-wobble"></div>
-      </div>
-      
-      <div class="christmas-jelly jelly-2">
-        <div class="jelly-cap"></div>
-        <div class="jelly-body">
-          <div class="jelly-shine"></div>
-        </div>
-        <div class="jelly-wobble"></div>
-      </div>
-      
-      <div class="christmas-jelly jelly-3">
-        <div class="jelly-cap"></div>
-        <div class="jelly-body">
-          <div class="jelly-shine"></div>
-        </div>
-        <div class="jelly-wobble"></div>
-      </div>
-      
-      <div class="christmas-jelly jelly-4">
-        <div class="jelly-cap"></div>
-        <div class="jelly-body">
-          <div class="jelly-shine"></div>
-        </div>
-        <div class="jelly-wobble"></div>
-      </div>
-      
-      <div class="christmas-jelly jelly-5">
-        <div class="jelly-cap"></div>
-        <div class="jelly-body">
-          <div class="jelly-shine"></div>
-        </div>
-        <div class="jelly-wobble"></div>
-      </div>
-      
-      <div class="christmas-jelly jelly-6">
-        <div class="jelly-cap"></div>
-        <div class="jelly-body">
-          <div class="jelly-shine"></div>
-        </div>
-        <div class="jelly-wobble"></div>
-      </div>
+      <span class="star"></span>
+      <span class="star"></span>
     </div>
     
     <div class="row align-items-center glass-panel futuristic-modules">
       <div class="col-lg-7">
-        <p class="eyebrow text-uppercase mb-2 text-white"><b>Avalanche Training</b></p>
-        <h1 class="display-4 fw-bold mb-3">
+        <p class="eyebrow text-uppercase mb-2"><span class="cyber-text" data-text="Avalanche Training">Avalanche Training</span></p>
+        <h1 class="display-4 fw-bold mb-3 glitch-text" data-text="3-Month Frontend Mentorship with Real Humans, Real Follow-Up">
           3-Month Frontend Mentorship with Real Humans, Real Follow-Up
         </h1>
         <p class="lead mb-4">
@@ -85,14 +115,17 @@
           </b>
         </p>
         <div class="d-flex flex-wrap gap-3">
-          <a href="#pricing" class="btn btn-light btn-lg px-4">Claim Early Bird Slot</a>
+          <a href="#pricing" class="btn btn-cyber btn-lg px-4">
+            <span class="btn-text">Claim Early Bird Slot</span>
+            <span class="btn-glitch"></span>
+          </a>
           <a
-            class="btn btn-outline-light btn-lg px-4"
+            class="btn btn-outline-cyber btn-lg px-4"
             href="https://chat.whatsapp.com/IFaj7I2daAE4I0eUqmXdps?mode=wwt"
             target="_blank"
             rel="noopener"
           >
-            Request WhatsApp Access
+            <span class="btn-text">Request WhatsApp Access</span>
           </a>
         </div>
         <p class="small text-white mt-3">
@@ -100,16 +133,17 @@
         </p>
       </div>
       <div class="col-lg-5 mt-5 mt-lg-0">
-        <div class="holo-card p-4">
-          <p class="text-uppercase font-bold mb-1 text-white">Mentorship Promise</p>
-          <h2 class="fw-semibold mb-3">Limited to 20 learners</h2>
-          <ul class="list-unstyled lh-lg">
-            <li>✔ Weekly 1:1 check-ins</li>
-            <li>✔ Custom practice briefs</li>
-            <li>✔ Human-led reviews, zero automation</li>
-            <li>✔ Hands-on project labs</li>
+        <div class="holo-card cyber-card p-4">
+          <div class="card-scan-line"></div>
+          <p class="text-uppercase font-bold mb-1 cyber-label">Mentorship Promise</p>
+          <h2 class="fw-semibold mb-3 text-glow">Limited to 20 learners</h2>
+          <ul class="list-unstyled lh-lg cyber-list">
+            <li><span class="check-icon">⬡</span> Weekly 1:1 check-ins</li>
+            <li><span class="check-icon">⬡</span> Custom practice briefs</li>
+            <li><span class="check-icon">⬡</span> Human-led reviews, zero automation</li>
+            <li><span class="check-icon">⬡</span> Hands-on project labs</li>
           </ul>
-          <p class="text-white small">
+          <p class="text-white small opacity-75">
             Optional backend extension covers Python + SQL after the core track.
           </p>
         </div>
@@ -150,32 +184,50 @@
       </div>
       <div class="row g-4 justify-content-center">
         <div class="col-md-4 col-lg-2">
-          <div class="stack-card">
+          <div class="stack-card cyber-stack">
+            <div class="stack-icon">
+              <svg viewBox="0 0 24 24" class="tech-icon"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+            </div>
             <span>HTML5</span>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="stack-card">
+          <div class="stack-card cyber-stack">
+            <div class="stack-icon">
+              <svg viewBox="0 0 24 24" class="tech-icon"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+            </div>
             <span>CSS3</span>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="stack-card">
+          <div class="stack-card cyber-stack">
+            <div class="stack-icon">
+              <svg viewBox="0 0 24 24" class="tech-icon"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+            </div>
             <span>JavaScript</span>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="stack-card">
+          <div class="stack-card cyber-stack">
+            <div class="stack-icon">
+              <svg viewBox="0 0 24 24" class="tech-icon"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.167 2.167 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.476 23.476 0 0 0-3.107-.534A23.892 23.892 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a22.73 22.73 0 0 0-3.113.538 15.02 15.02 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.64 25.64 0 0 1-4.412.005 26.64 26.64 0 0 1-1.183-1.86c-.372-.64-.71-1.29-1.018-1.946a25.17 25.17 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25.245 25.245 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a23.966 23.966 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23.142 23.142 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a25.819 25.819 0 0 0 1.341-2.338zm-9.945.02c.24.38.48.768.705 1.165.225.39.435.788.636 1.18-.7.103-1.37.226-2.006.386.18-.63.406-1.282.665-1.93zM12 15.847c.455.477.91 1 1.36 1.57-.44.02-.89.034-1.36.034-.46 0-.91-.013-1.35-.033.44-.572.89-1.097 1.35-1.57zm-2.205.07a25.892 25.892 0 0 0 1.344 2.33c-.694-.1-1.364-.235-2.006-.386.18-.63.406-1.29.66-1.946zm5.755 0c.27.67.5 1.332.68 1.96-.64.153-1.314.288-2.015.39a25.892 25.892 0 0 0 1.335-2.35zm3.48.853c.227 1.88-.058 3.327-.715 3.71-.163.095-.37.143-.59.143-1.013 0-2.514-.808-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54.085.46.17.93.22 1.41zm-13.31.12c.055-.47.135-.94.22-1.41.96.236 2.006.417 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.185 1.185 0 0 1-.553-.132c-.665-.38-.96-1.834-.7-3.73z"/></svg>
+            </div>
             <span>React</span>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="stack-card">
+          <div class="stack-card cyber-stack">
+            <div class="stack-icon">
+              <svg viewBox="0 0 24 24" class="tech-icon"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+            </div>
             <span>Python</span>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="stack-card">
+          <div class="stack-card cyber-stack">
+            <div class="stack-icon">
+              <svg viewBox="0 0 24 24" class="tech-icon"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.822.615 1.42.615.26 0 .5-.04.72-.12l1.24.74.61-.57zm-2.87-.926c-.232-.4-.35-1.003-.35-1.81 0-1.39.38-2.084 1.136-2.084.347 0 .61.138.79.414.23.312.345.94.345 1.882 0 .838-.1 1.456-.302 1.853-.166.338-.413.508-.74.508-.327 0-.578-.185-.878-.762zm-4.82-.066c-.258-.172-.39-.428-.39-.768 0-.29.1-.52.297-.683.2-.17.47-.254.815-.254.252 0 .506.04.766.118l.03-.202c.052-.35.078-.664.078-.94 0-.323-.04-.582-.12-.776-.093-.208-.223-.312-.39-.312-.17 0-.304.104-.4.312-.1.208-.15.466-.15.776 0 .276.026.59.078.94l.03.203c-.26-.08-.514-.118-.766-.118-.346 0-.617.084-.816.254-.2.164-.3.393-.3.683 0 .34.132.596.39.768.257.17.588.256.993.256.404 0 .736-.085.993-.255zm-1.74-.466c0-.4.26-.682.56-.682.298 0 .56.282.56.682 0 .4-.262.682-.56.682-.3 0-.56-.282-.56-.682z"/></svg>
+            </div>
             <span>SQL</span>
           </div>
         </div>
